@@ -26,3 +26,6 @@ module.exports = (robot) ->
   robot.respond /DIE$/i, (msg) ->
     msg.send "Goodbye, cruel world."
     process.exit 0
+
+  robot.hear /感動的だな$/, (msg) ->
+    msg.send "だが無意味だ"
