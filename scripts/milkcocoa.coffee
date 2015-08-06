@@ -16,8 +16,8 @@ module.exports = (robot) ->
       value = 0
       if data == null
         dataStore.push({'content': 0, 'name': name} , (pushErr, pushed) ->
-          msg.send pushErr
           )
+        msg.send name + "が褒められました"
       else
         id = data.id
         value = data.value.content + 1
